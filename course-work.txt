@@ -26,6 +26,15 @@ Functionality
 --- Manage user accounts ( View User information / Block users )
 
 
+Нужен софтуер: 
+- NodeJS 8,x
+- NPM
+- Visual Studio Code
+- GIT BASH
+
+- npm install -g @angular/cli
+- npm install @angular/cli
+
 
 Използвайте версия на пакетите по ваш избор. 
 При завършен проект изпратете линк към гитхъб репозитори или архив на проекта ( без node_modules ) на мейл ivanov.todor1@gmail.com до края на 9та седмица. 
