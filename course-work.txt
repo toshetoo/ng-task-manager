@@ -24,3 +24,11 @@ Functionality
 -- # Admins
 --- View, Add, Edit, Delete courses
 --- Manage user accounts ( View User information / Block users )
+
+
+
+Използвайте версия на пакетите по ваш избор. 
+При завършен проект изпратете линк към гитхъб репозитори или архив на проекта ( без node_modules ) на мейл ivanov.todor1@gmail.com до края на 9та седмица. 
+На упражнението в седмица 10 присъствието за защита на проектите е задължително.
+
+Ако имате някакви въпроси, пишете ми на мейл ivanov.todor1@gmail.com
