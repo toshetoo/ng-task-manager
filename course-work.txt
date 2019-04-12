@@ -1,0 +1,26 @@
+Courses academy
+
+Entities:
+# User
+-- Name (required)
+-- Email (required)
+-- Password (required)
+-- Role (User or Admin)
+-- IsBlocked
+# Course
+-- Title
+-- Description
+-- Rating
+
+Functionality
+# Non authenticated users can
+- View all available courses ( only title and description )
+# Authenticated users can
+-- # Users
+--- View all available courses ( title, description, ratings )
+--- Add rating to courses
+--- Join a course
+
+-- # Admins
+--- View, Add, Edit, Delete courses
+--- Manage user accounts ( View User information / Block users )
