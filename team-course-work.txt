@@ -1,0 +1,40 @@
+Courses Academy
+
+Non-authenticated users privilleges
+	- Can view courses (only title and description)
+
+Authenticated users privilleges
+Two types of users (Administrator, User)
+	User will be able to:
+		- View courses (title, description, rating, and reviews)
+			- Ability to filter by:
+				** Creation date (Show newest/latest)
+				** Title
+				** VisitedCount (Show the most visited)
+			- Ability to sort by
+				** Creation date (Show newest/latest)
+				** Title
+				** VisitedCount (Show the most visited)
+				** Rating
+			- Ability to search by Title	
+		- Vote / Add a rating
+		- Set completion to course
+		- Add a review
+		- Add a comment
+		- View reports/statistics
+			** Courses depending on their rating. Types of visualization
+				#1 Bar Chart
+				#2 Table view with proggress bar for rating in format "course rating/highest rating"
+			** Courses depenging on their completion percents
+			** Most visited courses?
+
+	Administrator will be able to:
+		- View, Add / Edit / Delete courses
+		- Manage user accounts - View users, Block user accounts
+
+		
+Entitites
+	User - Name(required), Email(required, email), Password(required), Role(admin, user), IsBlocked
+	Course - Title(required), Description, Rating(number), DateCreated (date, internally set), Completion (number, required), VisitedCount (number), ReviewIds, CommentIds
+	Review - Content (required), CourseId
+	Comment - Content (required), CourseId
