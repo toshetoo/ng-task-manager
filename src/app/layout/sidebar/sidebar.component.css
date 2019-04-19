@@ -1,0 +1,15 @@
+.menu-wrapper {
+    background-color: lightgray;
+    height: 90vh;
+    border-top: 1px solid black;
+}
+
+ul.menu-items {
+    padding: 10px;
+    list-style: none;
+}
+
+li.menu-item {
+    font-size: 1.250rem;
+    cursor: pointer;
+}
