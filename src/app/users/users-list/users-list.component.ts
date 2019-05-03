@@ -20,4 +20,8 @@ export class UsersListComponent implements OnInit {
       this.users = response;
     });
   }
+
+  onItemDeleted(index: number): void {
+    this.users.splice(index, 1);
+  }
 }

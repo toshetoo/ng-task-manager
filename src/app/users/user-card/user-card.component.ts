@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import UserInterface from '../models/user.model';
 
 @Component({
@@ -10,6 +10,7 @@ export class UserCardComponent implements OnInit {
 
   @Input() user: UserInterface;
   @Input() index: number;
+  @Output() onDelete: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
 
@@ -18,6 +19,10 @@ export class UserCardComponent implements OnInit {
 
   getUserImage() {
     return this.user.picture + "?random=" + this.index;
+  }
+
+  onDeleteClicked() {
+    this.onDelete.emit(this.index);
   }
 
 }

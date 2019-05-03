@@ -9,8 +9,8 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { MainViewComponent } from './layout/main-view/main-view.component';
 import { RouterModule } from '@angular/router';
 import routes from './routes';
-import { UsersModule } from './users/users.module';
 import UsersService from './users/users.service';
+import { TooltipModule } from 'ngx-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    UsersModule
+    TooltipModule.forRoot()
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

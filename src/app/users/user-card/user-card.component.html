@@ -1,4 +1,11 @@
 <div class="user-card">
+  <span class="delete-btn" 
+  tooltip="Delete"
+  placement="top"
+  container="body"
+  title="Delete"
+  (click)="onDeleteClicked()"
+  >X</span>
   <div class="image-holder">
     <img class="user-img" [src]="getUserImage()" alt="user picture" />
   </div>

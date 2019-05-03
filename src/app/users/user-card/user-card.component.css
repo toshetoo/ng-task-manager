@@ -6,3 +6,10 @@
 .user-img {
     max-width: 100px;
 }
+
+.delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    cursor: pointer;
+}

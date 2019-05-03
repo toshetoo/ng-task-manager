@@ -1,7 +1,7 @@
 <div class="users-holder">
   <div class="row">
       <div class="user-card col-4 mt-3 mb-3" *ngFor="let currentUser of users; let index = index">
-          <app-user-card [user]="currentUser" [index]="index"></app-user-card>
+          <app-user-card (onDelete)="onItemDeleted($event)" [user]="currentUser" [index]="index"></app-user-card>
         </div>
   </div>  
 </div>
