@@ -3,27 +3,32 @@
         {
           "name": "Lela Lang",
           "username": "Chandler",
-          "password": "123"
+          "password": "123",
+          "picture": "https://picsum.photos/200/300"
         },
         {
           "name": "Welch Cash",
           "username": "Brown",
-          "password": "123"
+          "password": "123",
+          "picture": "https://picsum.photos/200/300"
         },
         {
           "name": "Candice Casey",
           "username": "Avis",
-          "password": "123"
+          "password": "123",
+          "picture": "https://picsum.photos/200/300"
         },
         {
           "name": "Magdalena Townsend",
           "username": "Gibson",
-          "password": "123"
+          "password": "123",
+          "picture": "https://picsum.photos/200/300"
         },
         {
           "name": "Martha Moody",
           "username": "Elizabeth",
-          "password": "123"
+          "password": "123",
+          "picture": "https://picsum.photos/200/300"
         }
       ],
     "tasks": [

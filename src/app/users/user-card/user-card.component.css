@@ -1,0 +1,8 @@
+.user-card {
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.user-img {
+    max-width: 100px;
+}

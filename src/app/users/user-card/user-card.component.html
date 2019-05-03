@@ -1,3 +1,13 @@
-<p>
-  user-card works!
-</p>
+<div class="user-card">
+  <div class="image-holder">
+    <img class="user-img" [src]="getUserImage()" alt="user picture" />
+  </div>
+  <div class="info-holder">
+    <div class="name">
+        <span>Name: </span><span>{{ user.name }}</span>
+    </div>
+    <div class="username">
+        <span>Username: </span><span>{{ user.username }}</span>
+    </div>    
+  </div>
+</div>

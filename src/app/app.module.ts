@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import routes from './routes';
 import { UsersModule } from './users/users.module';
 import UsersService from './users/users.service';
-import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
