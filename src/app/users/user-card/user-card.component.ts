@@ -18,7 +18,7 @@ export class UserCardComponent implements OnInit {
   }
 
   getUserImage() {
-    return this.user.picture + "?random=" + this.index;
+    return this.user.picture + '?random=' + this.index;
   }
 
   onDeleteClicked() {

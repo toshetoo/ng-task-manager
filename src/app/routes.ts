@@ -2,11 +2,11 @@ import { Routes } from '@angular/router';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { MainViewComponent } from './layout/main-view/main-view.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: '',
         component: MainViewComponent,
-        children:[
+        children: [
             {
                 path: 'users',
                 loadChildren: './users/users.module#UsersModule'
@@ -19,5 +19,3 @@ const routes: Routes = [
         pathMatch: 'full'
     }
 ];
-
-export default routes;

@@ -6,21 +6,21 @@ import { Component, OnInit, DoCheck } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, DoCheck {
-  title: string = 'course-work';
+  title = 'course-work';
   // message = 'Hello World!';
 
   testObj;
   numbersArray: number[] = [1, 2, 3, 4, 5];
 
   constructor() {
-    this.title = "faudshfdjs";
+    this.title = 'faudshfdjs';
   }
 
   ngOnInit() {
       setTimeout(() => {
         this.testObj = {
           prop1: 'First Prop',
-          prop2: 'Second prop' 
+          prop2: 'Second prop'
         };
       }, 6000);
   }

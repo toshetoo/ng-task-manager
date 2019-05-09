@@ -11,6 +11,6 @@ export default class UsersService {
   constructor(private http: HttpClient) { }
 
   getAllUsers(): Observable<UserInterface[]> {
-    return this.http.get<UserInterface[]>("http://localhost:3000/users");
+    return this.http.get<UserInterface[]>('http://localhost:3000/users');
   }
 }

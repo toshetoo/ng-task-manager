@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { UsersListComponent } from './users-list/users-list.component';
 import { UsersComponent } from './users.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: '',
         component: UsersComponent,
@@ -14,5 +14,3 @@ const routes: Routes = [
         ]
     }
 ];
-
-export default routes;

@@ -8,7 +8,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { MainViewComponent } from './layout/main-view/main-view.component';
 import { RouterModule } from '@angular/router';
-import routes from './routes';
+import { routes } from './routes';
 import UsersService from './users/users.service';
 import { TooltipModule } from 'ngx-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
