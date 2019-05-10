@@ -9,7 +9,6 @@ import UserInterface from '../models/user.model';
 export class UserCardComponent implements OnInit {
 
   @Input() user: UserInterface;
-  @Input() index: number;
   @Output() onDelete: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
@@ -18,11 +17,11 @@ export class UserCardComponent implements OnInit {
   }
 
   getUserImage() {
-    return this.user.picture + '?random=' + this.index;
+    return this.user.picture + '?random=' + this.user.id;
   }
 
   onDeleteClicked() {
-    this.onDelete.emit(this.index);
+    this.onDelete.emit(this.user.id);
   }
 
 }

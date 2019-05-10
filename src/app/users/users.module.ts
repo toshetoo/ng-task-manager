@@ -6,12 +6,15 @@ import { UserCardComponent } from './user-card/user-card.component';
 import { UsersComponent } from './users.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './routes';
+import { AddUserComponent } from './add-user/add-user.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [UsersListComponent, UserCardComponent, UsersComponent],
+  declarations: [UsersListComponent, UserCardComponent, UsersComponent, AddUserComponent],
   imports: [
     CommonModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ]
 })

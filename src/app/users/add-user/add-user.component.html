@@ -1,0 +1,80 @@
+<div class="user-form-holder mt-3">
+  <form [formGroup]="userForm" (ngSubmit)="onFormSubmit($event)">
+    <div class="row">
+      <div class="offset-2 col-8">
+        <div class="form-group">
+          <label>Username</label>
+          <input class="form-control" 
+          name="username"
+          formControlName="username"
+          >
+
+          <div class="error" *ngIf="username?.errors">
+            <span class="text-danger" *ngIf="username.errors.required">
+              This field is required.
+            </span>
+            <span class="text-danger" *ngIf="username.errors.minlength">
+                The min length is 3.
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-2 col-8">
+        <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" name="name"
+          formControlName="name"
+          >
+
+          <div class="error" *ngIf="name?.errors?.required">
+              <span class="text-danger">
+                This field is required.
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-2 col-8">
+        <div class="form-group">
+          <label>Password</label>
+          <input class="form-control" name="password"
+          formControlName="password"
+          >
+
+          <div class="error" *ngIf="password?.errors?.required">
+              <span class="text-danger">
+                This field is required.
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-2 col-8">
+        <div class="form-group">
+          <label>Picture</label>
+          <input class="form-control" name="picture"
+          formControlName="picture"
+          >
+
+          <div class="error" *ngIf="picture?.errors?.required">
+              <span class="text-danger">
+                This field is required.
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset-2 col-8 text-right">
+        <button type="submit" 
+        class="btn btn-primary"
+        [disabled]="!isFormValid"
+        >Save user</button>
+      </div>
+    </div>
+  </form>
+</div>

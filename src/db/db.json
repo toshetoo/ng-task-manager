@@ -1,71 +1,83 @@
 {
-    "users": [
-        {
-          "name": "Lela Lang",
-          "username": "Chandler",
-          "password": "123",
-          "picture": "https://picsum.photos/200/300"
-        },
-        {
-          "name": "Welch Cash",
-          "username": "Brown",
-          "password": "123",
-          "picture": "https://picsum.photos/200/300"
-        },
-        {
-          "name": "Candice Casey",
-          "username": "Avis",
-          "password": "123",
-          "picture": "https://picsum.photos/200/300"
-        },
-        {
-          "name": "Magdalena Townsend",
-          "username": "Gibson",
-          "password": "123",
-          "picture": "https://picsum.photos/200/300"
-        },
-        {
-          "name": "Martha Moody",
-          "username": "Elizabeth",
-          "password": "123",
-          "picture": "https://picsum.photos/200/300"
-        }
-      ],
-    "tasks": [
-        {
-          "guid": "83404ef5-bb8a-432a-9e06-8209c94d34de",
-          "title": "labore",
-          "description": "exercitation tempor aliqua reprehenderit fugiat tempor dolor voluptate nostrud deserunt",
-          "creationDate": "2014-06-11T07:50:45 -03:00",
-          "assigneeId": ""
-        },
-        {
-          "guid": "27f512e3-bbae-4604-ae7b-afb30118f299",
-          "title": "in",
-          "description": "sit consectetur consequat officia ullamco mollit dolore officia ipsum sit",
-          "creationDate": "2017-08-30T06:03:15 -03:00",
-          "assigneeId": ""
-        },
-        {
-          "guid": "2d195d33-13e4-4f9d-a788-95a90757844c",
-          "title": "quis",
-          "description": "tempor cupidatat nostrud qui ex amet commodo duis esse enim",
-          "creationDate": "2016-09-12T01:44:01 -03:00",
-          "assigneeId": ""
-        },
-        {
-          "guid": "060bbd4f-9051-445e-9a99-f82553c48314",
-          "title": "reprehenderit",
-          "description": "occaecat commodo ullamco mollit aliquip laborum cillum nostrud nisi eiusmod",
-          "creationDate": "2018-11-04T02:03:10 -02:00",
-          "assigneeId": ""
-        },
-        {
-          "guid": "bb606668-d578-442f-93ea-2fb9cc9ebb90",
-          "title": "proident",
-          "description": "sunt duis ut minim excepteur mollit qui fugiat enim aute",
-          "creationDate": "2014-03-12T09:29:21 -02:00",
-          "assigneeId": ""
-        }
-      ]
+  "users": [
+    {
+      "id": 2,
+      "name": "Welch Cash",
+      "username": "Brown",
+      "password": "123",
+      "picture": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 3,
+      "name": "Candice Casey",
+      "username": "Avis",
+      "password": "123",
+      "picture": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 4,
+      "name": "Magdalena Townsend",
+      "username": "Gibson",
+      "password": "123",
+      "picture": "https://picsum.photos/200/300"
+    },
+    {
+      "id": 5,
+      "name": "Martha Moody",
+      "username": "Elizabeth",
+      "password": "123",
+      "picture": "https://picsum.photos/200/300"
+    },
+    {
+      "name": "Spasko 2",
+      "username": "SPas",
+      "password": "az",
+      "picture": "https://picsum.photos/200/300",
+      "id": 6
+    },
+    {
+      "name": "gsdfgdsf",
+      "username": "gfdgsdf",
+      "password": "as",
+      "picture": "https://picsum.photos/200/300",
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "guid": "83404ef5-bb8a-432a-9e06-8209c94d34de",
+      "title": "labore",
+      "description": "exercitation tempor aliqua reprehenderit fugiat tempor dolor voluptate nostrud deserunt",
+      "creationDate": "2014-06-11T07:50:45 -03:00",
+      "assigneeId": ""
+    },
+    {
+      "guid": "27f512e3-bbae-4604-ae7b-afb30118f299",
+      "title": "in",
+      "description": "sit consectetur consequat officia ullamco mollit dolore officia ipsum sit",
+      "creationDate": "2017-08-30T06:03:15 -03:00",
+      "assigneeId": ""
+    },
+    {
+      "guid": "2d195d33-13e4-4f9d-a788-95a90757844c",
+      "title": "quis",
+      "description": "tempor cupidatat nostrud qui ex amet commodo duis esse enim",
+      "creationDate": "2016-09-12T01:44:01 -03:00",
+      "assigneeId": ""
+    },
+    {
+      "guid": "060bbd4f-9051-445e-9a99-f82553c48314",
+      "title": "reprehenderit",
+      "description": "occaecat commodo ullamco mollit aliquip laborum cillum nostrud nisi eiusmod",
+      "creationDate": "2018-11-04T02:03:10 -02:00",
+      "assigneeId": ""
+    },
+    {
+      "guid": "bb606668-d578-442f-93ea-2fb9cc9ebb90",
+      "title": "proident",
+      "description": "sunt duis ut minim excepteur mollit qui fugiat enim aute",
+      "creationDate": "2014-03-12T09:29:21 -02:00",
+      "assigneeId": ""
+    }
+  ]
 }
