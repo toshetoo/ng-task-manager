@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import UsersService from '../users.service';
-import { Router } from '../../../../node_modules/@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-add-user',
@@ -14,16 +14,38 @@ export class AddUserComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
               private usersService: UsersService,
-            private router: Router) {
+            private router: Router,
+            private route: ActivatedRoute) {
+
+    this.route.params.subscribe((params) => {
+      console.log(params);
+
+      if (params.id) {
+        this.usersService.getById(params.id)
+        .subscribe((user) => {
+          this.createForm();
+
+          this.userForm.patchValue({...user});
+          // this.userForm.name = user.name;
+          // this.userForm.password = user.paswwrod;
+        });
+      }
+    });
+    
+    this.createForm();
+   }
+
+  ngOnInit() {
+  }
+  
+  private createForm(): void {
     this.userForm = this.fb.group({
+      id: [''],
       name: ['', Validators.required],
       username: ['', [Validators.required, Validators.minLength(3)]],
       password: ['', [Validators.required, Validators.maxLength(5)]],
       picture: ['https://picsum.photos/200/300', Validators.required]
     });
-   }
-
-  ngOnInit() {
   }
 
   onFormSubmit(event): void {

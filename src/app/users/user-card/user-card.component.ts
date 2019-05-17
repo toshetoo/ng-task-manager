@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import UserInterface from '../models/user.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-card',
@@ -11,7 +12,7 @@ export class UserCardComponent implements OnInit {
   @Input() user: UserInterface;
   @Output() onDelete: EventEmitter<number> = new EventEmitter();
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -24,4 +25,7 @@ export class UserCardComponent implements OnInit {
     this.onDelete.emit(this.user.id);
   }
 
+  onUserEdit() {
+    this.router.navigate(['users/add', this.user.id]);
+  }
 }
