@@ -1,0 +1,36 @@
+<div class="login-holder">
+  <div class="container">
+    <div class="form-holder">
+        <h3>Login</h3>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label>Username</label>
+                <input type="text" 
+                class="form-control"
+                formControlName="username"
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" 
+                  class="form-control"
+                  formControlName="password"
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+        </form>
+    </div>    
+  </div>
+</div>

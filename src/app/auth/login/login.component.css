@@ -1,0 +1,15 @@
+.login-holder {
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-holder {
+    width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}

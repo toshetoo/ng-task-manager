@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": 2,
-      "name": "Welch Cash",
-      "username": "Brown",
-      "password": "123",
-      "picture": "https://picsum.photos/200/300"
-    },
-    {
       "id": 3,
       "name": "Candice Casey",
       "username": "Avis",
@@ -41,6 +34,13 @@
       "password": "as",
       "picture": "https://picsum.photos/200/300",
       "id": 7
+    },
+    {
+      "name": "Welch Cash",
+      "username": "Green",
+      "password": "123",
+      "picture": "https://picsum.photos/200/300",
+      "id": 8
     }
   ],
   "tasks": [
