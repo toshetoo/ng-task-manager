@@ -1,0 +1,19 @@
+.single-task {
+    border: 1px solid gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.assign-btn {
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    cursor: pointer;
+}

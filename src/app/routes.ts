@@ -13,6 +13,11 @@ export const routes: Routes = [
                 path: 'users',
                 loadChildren: './users/users.module#UsersModule',
                 canLoad: [AuthenticatedGuard]
+            },
+            {
+                path: 'tasks',
+                loadChildren: './tasks/tasks.module#TasksModule',
+                canLoad: [AuthenticatedGuard]
             }
         ]
     },

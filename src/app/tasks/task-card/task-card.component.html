@@ -1,0 +1,35 @@
+<div class="single-task">
+  <span 
+  class="assign-btn"
+  title="Assign"
+  (click)="onAssignClick()"
+  >A</span>
+
+  <span 
+  class="delete-btn"
+  title="Delete"
+  (click)="onDeleteClick()"
+  >X</span>
+  <div class="row">
+    <div class="col-12">
+      <h3>{{ task.title }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p>{{ task.description }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <span>Creation Date: </span>
+      <span>{{ task.creationDate }}</span>
+    </div>    
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <span>Assignee :</span>
+      <span>{{ task.assigneeId }}</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="task-holder">
+  <div class="row">
+    <div class="task-card col-6 mt-3 mb-3" *ngFor="let currentTask of tasks; let index = index">
+        <app-task-card [task]="currentTask" (onDelete)="onTaskDeleted($event)"></app-task-card>
+    </div>
+</div>  
+</div>
