@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from '../../../node_modules/rxjs';
+import { Observable } from 'rxjs';
 import UserInterface from '../users/models/user.model';
 import UsersService from '../users/users.service';
 
@@ -16,6 +16,10 @@ export default class AuthService {
 
     public isLoggedIn(): boolean {
         return !!sessionStorage.getItem('loggedUser');
+    }
+
+    public getLoggedUser(): UserInterface {
+        return JSON.parse(sessionStorage.getItem('loggedUser'));
     }
 
     public login(username: string, password: string): Observable<UserInterface> {
