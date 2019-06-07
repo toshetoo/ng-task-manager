@@ -1,0 +1,48 @@
+<div class="task-form-holder mt-3">
+    <form [formGroup]="taskForm" (ngSubmit)="onFormSubmit($event)">
+      <div class="row">
+        <div class="offset-2 col-8">
+          <div class="form-group">
+            <label>Title</label>
+            <input class="form-control" 
+            name="title"
+            formControlName="title"
+            >
+  
+            <div class="error" *ngIf="title?.errors">
+              <span class="text-danger" *ngIf="title.errors.required">
+                This field is required.
+              </span>
+              <span class="text-danger" *ngIf="title.errors.minlength">
+                  The min length is 3.
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-2 col-8">
+          <div class="form-group">
+            <label>Description</label>
+            <input class="form-control" name="description"
+            formControlName="description"
+            >
+  
+            <div class="error" *ngIf="description?.errors?.required">
+                <span class="text-danger">
+                  This field is required.
+                </span>
+              </div>
+          </div>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="offset-2 col-8 text-right">
+          <button type="submit" 
+          class="btn btn-primary"
+          [disabled]="!isFormValid"
+          >Save task</button>
+        </div>
+      </div>
+    </form>
+  </div>
