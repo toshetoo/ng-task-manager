@@ -1,11 +1,17 @@
 <div class="single-task">
-  <span 
+  <span *ngIf="isLoggedIn && canAssign"
   class="assign-btn"
   title="Assign"
   (click)="onAssignClick()"
   >A</span>
 
-  <span 
+  <span *ngIf="isLoggedIn"
+  class="edit-btn"
+  title="Edit"
+  (click)="onEditClick()"
+  >E</span>
+
+  <span *ngIf="isLoggedIn"
   class="delete-btn"
   title="Delete"
   (click)="onDeleteClick()"
@@ -29,7 +35,9 @@
   <div class="row">
     <div class="col-12">
       <span>Assignee :</span>
-      <span>{{ task.assigneeId }}</span>
+      <div *ngFor="let assignee of task.assignees">
+        {{ assignee.name }}
+      </div>
     </div>
   </div>
 </div>

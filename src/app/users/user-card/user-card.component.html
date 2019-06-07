@@ -1,5 +1,7 @@
 <div class="user-card">
-  <span class="edit-btn" (click)="onUserEdit()">
+  <span class="edit-btn" 
+  (click)="onUserEdit()"
+  *ngIf="canManipulate">
     E
   </span>
 
@@ -9,6 +11,7 @@
   container="body"
   title="Delete"
   (click)="onDeleteClicked()"
+  *ngIf="canManipulate"
   >X</span>
   <div class="image-holder">
     <img class="user-img" [src]="getUserImage()" alt="user picture" />

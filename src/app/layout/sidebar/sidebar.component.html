@@ -1,10 +1,13 @@
 <div class="menu-wrapper">
   <ul class="menu-items">
     <li class="menu-item mb-2 ml-2">
-     <a routerLink="/users/list">Users</a>
+      <a routerLink="/users/list">Users</a>
     </li>
     <li class="menu-item mb-2 ml-2">
       <a routerLink="/tasks/list">Tasks</a>
+    </li>
+    <li class="menu-item mb-2 ml-2">
+      <a (click)="logout()">Logout</a>
     </li>
   </ul>
 </div>

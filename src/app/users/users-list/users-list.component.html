@@ -1,10 +1,10 @@
 <div class="users-holder">
-  <div class="row justify-content-end">
+  <div class="row justify-content-end" *ngIf="currentUser.isAdmin">
     <button class="btn btn-primary mr-3 mt-2" (click)="onAddUser()">Add new user</button>
   </div>
   <div class="row">
-      <div class="user-card col-4 mt-3 mb-3" *ngFor="let currentUser of users; let index = index">
-          <app-user-card (onDelete)="onItemDeleted($event)" [user]="currentUser"></app-user-card>
+      <div class="user-card col-4 mt-3 mb-3" *ngFor="let user of users; let index = index">
+          <app-user-card [currentUserId]="currentUser.id" [isAdmin]="currentUser.isAdmin" (onDelete)="onItemDeleted($event)" [user]="user"></app-user-card>
         </div>
   </div>  
 </div>

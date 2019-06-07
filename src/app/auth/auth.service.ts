@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import UserInterface from '../users/models/user.model';
 import UsersService from '../users/users.service';
+import { Router } from '@angular/router';
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +11,8 @@ import UsersService from '../users/users.service';
 export default class AuthService {
 
     constructor(private http: HttpClient,
-                private usersService: UsersService) {
+                private usersService: UsersService,
+                private router: Router) {
 
     }
 
@@ -38,5 +40,10 @@ export default class AuthService {
                 }
             });
         });        
+    }
+
+    public logout(): void {
+        sessionStorage.removeItem('loggedUser');
+        this.router.navigateByUrl('auth/login');
     }
  }

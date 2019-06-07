@@ -11,6 +11,13 @@
     cursor: pointer;
 }
 
+.edit-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 35px;
+}
+
 .delete-btn {
     position: absolute;
     right: 25px;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import TaskInterface from '../models/task.model';
 import { TasksService } from '../tasks.service';
+import { Router } from '../../../../node_modules/@angular/router';
 
 @Component({
   selector: 'app-tasks-list',
@@ -11,7 +12,8 @@ export class TasksListComponent implements OnInit {
 
   tasks: TaskInterface[] = [];
 
-  constructor(private tasksService: TasksService) { }
+  constructor(private tasksService: TasksService,
+              private router: Router) { }
 
   ngOnInit() {
     this.tasksService.getAllTasks().subscribe((tasks) => {
@@ -24,6 +26,10 @@ export class TasksListComponent implements OnInit {
     this.tasksService.deleteTask(id).subscribe(() => {
       this.tasks = this.tasks.filter(t => t.id !== id);
     });
+  }
+
+  onTaskAdd(): void {
+    this.router.navigateByUrl('tasks/add-task');
   }
 
 }

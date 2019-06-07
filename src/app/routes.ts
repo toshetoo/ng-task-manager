@@ -16,8 +16,7 @@ export const routes: Routes = [
             },
             {
                 path: 'tasks',
-                loadChildren: './tasks/tasks.module#TasksModule',
-                canLoad: [AuthenticatedGuard]
+                loadChildren: './tasks/tasks.module#TasksModule'
             }
         ]
     },

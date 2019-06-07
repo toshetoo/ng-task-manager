@@ -4,4 +4,5 @@ export default interface UserInterface {
     username: string;
     password: string;
     picture: string;
+    isAdmin?: boolean;
 }

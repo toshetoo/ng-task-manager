@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import UserInterface from '../models/user.model';
 import UsersService from '../users.service';
 import { Router } from '@angular/router';
+import AuthService from '../../auth/auth.service';
 
 @Component({
   selector: 'app-users-list',
@@ -11,9 +12,13 @@ import { Router } from '@angular/router';
 export class UsersListComponent implements OnInit {
 
   users: UserInterface[] = [];
+  currentUser: UserInterface;
 
   constructor(private usersService: UsersService,
+              private authService: AuthService,
               private router: Router) {
+
+    this.currentUser = this.authService.getLoggedUser();
   }
 
   ngOnInit() {
